@@ -1,4 +1,4 @@
-# Vccination query
+# Vaccination query
 
 
 ## All entries as on date i.e 28-08-2021

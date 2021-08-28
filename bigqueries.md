@@ -16,7 +16,7 @@ SELECT count(sub_region_1) FROM `bigquery-public-data.covid19_vaccination_search
 ```
 ![2](https://user-images.githubusercontent.com/88762643/131224322-83091467-92e0-476c-b9f9-6a54d04976a6.PNG)
 
-## start date and last date of vaccination in 2021
+## Start date and last date of vaccination in 2021
 ``` sql
 SELECT min(date) as start_date, max(date) as last_date FROM `bigquery-public-data.covid19_vaccination_search_insights.covid19_vaccination_search_insights` LIMIT1000
 ```
@@ -35,7 +35,7 @@ SELECT distinct sub_region_1, sum(sni_safety_side_effects)as covid_side_effects 
 ```
 ![image](https://user-images.githubusercontent.com/88762643/131230884-1dd208c8-467e-41de-8568-1399ef729940.png)
 
-## days in regios where vaccination in that region was gretater than its daily average
+## Days in regios where vaccination in that region was gretater than its daily average
 ``` sql
 with cte as (
 SELECT avg(sni_covid19_vaccination) as avg_vaccination,sub_region_1 FROM `bigquery-public-data.covid19_vaccination_search_insights.covid19_vaccination_search_insights` group by(sub_region_1)

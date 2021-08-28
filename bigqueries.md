@@ -3,7 +3,9 @@
 
 ## All entries as on date i.e 28-08-2021
 
-SELECT  * FROM `bigquery-public-data.covid19_vaccination_search_insights.covid19_vaccination_search_insights` WHERE DATE(_PARTITIONTIME) = "2021-08-28" LIMIT 1000
+'''sql
+SELECT  * FROM `bigquery-public-data.covid19_vaccination_search_insights.covid19_vaccination_search_insights` WHERE DATE(_PARTITIONTIME) = "2021-08-28" LIMIT 1000 
+'''
 
 ![1](https://user-images.githubusercontent.com/88762643/131224384-3042a806-c54e-48a0-b46c-0b069d60e7ac.PNG)
 
